@@ -12,7 +12,7 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [token, setToken] = useState(true);
   return (
-    <div className="flex items-center justify-between text-sm py-4 mb-5 border-b border-b-gray-400">
+    <div className="flex items-center justify-between text-sm py-4 mb-5 border-b border-b-gray-400 relative">
       <img
         onClick={() => navigate()}
         className="w-44 cursor-pointer"
@@ -74,7 +74,7 @@ const Navbar = () => {
         )}
         <img
           onClick={() => setShowMenu(true)}
-          className="w-6 md:hidden"
+          className="w-6 md:hidden absolute right-0 top-5"
           src={menuicon}
         ></img>
         {/* mobile menu */}
